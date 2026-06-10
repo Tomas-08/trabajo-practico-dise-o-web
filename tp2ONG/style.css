@@ -2173,6 +2173,7 @@ iframe {
     background-color: #fdf3e7;
     padding: 0 100px 80px;
     margin-bottom: 300px;
+    padding-top: 100px;
 }
 
 #donar-insumos-grid {
@@ -3741,6 +3742,7 @@ footer {
     padding: 80px 100px;
     background-color: #fff8f5;
     width: 100%;
+    margin-bottom: 60px;
 }
 
 .mv-card {
