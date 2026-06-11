@@ -628,6 +628,12 @@ footer {
     overflow: hidden;
 }
 
+#der picture {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
 #der img {
     width: 100%;
     height: 100%;
@@ -799,6 +805,12 @@ body {
 }
 
 #fotocastra {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#fotocastra img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -2543,7 +2555,7 @@ li:nth-child(1) img {
     height: 280px;
 }
 
-#der img {
+#der picture {
     height: 280px;
 }
 
@@ -3032,7 +3044,7 @@ li:nth-child(1) picture img {
     height: 280px;
 }
 
-#der img {
+#der picture {
     height: 280px;
 }
 
