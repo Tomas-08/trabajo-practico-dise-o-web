@@ -13,7 +13,7 @@ function toggleFaq(boton) {
         b.classList.remove('activa');
         b.nextElementSibling.classList.remove('visible');
     });
-                                                                                                                      
+
     if (!estaActiva) {
         boton.classList.add('activa');
         respuesta.classList.add('visible');
@@ -69,7 +69,7 @@ function abrirModal() {
         }
 
         let costoVacuna      = 3000;   // vacuna individual
-        let costoAlimento    = 8000;   // bolsa de alimento 
+        let costoAlimento    = 8000;   // bolsa de alimento
         let costoEsterilizar = 15000;  // esterilización
         let costoSalvarVida  = 20000;  // rescate + atención médica completa
 
@@ -127,16 +127,17 @@ function abrirModal() {
 
     botonHacerDonacion.addEventListener("click", function () {
         let monto = parseFloat(inputMonto.value) || 0;
+        const donarHref = document.querySelector("#botoncito a")?.getAttribute("href") || "Donar.html";
         modal.querySelector(".modal-box").innerHTML = `
             <div class="modal-gracias">
                 <div class="modal-icono">🐾</div>
                 <h2 class="modal-titulo">¡Gracias por tu donación!</h2>
                 <p class="modal-subtitulo">Tu apoyo hace posible que sigamos rescatando y cuidando a nuestros Camperitos.</p>
                 ${monto >= 20000 ? `<p class="resultado-extra">Con tu donación de <strong>$${monto.toLocaleString()}</strong> estás salvando una vida. 🐕</p>` : ""}
-                <a class="modal-btn-calcular" href="../Donar.html">Ir a donar</a>
+                <a class="modal-btn-calcular" href="${donarHref}">Ir a donar</a>
                 <button class="modal-btn-cerrar" id="cerrarGracias">Volver</button>
             </div>`;
         modal.querySelector("#cerrarGracias").addEventListener("click", cerrarModal);
     });
 }
-    
+
